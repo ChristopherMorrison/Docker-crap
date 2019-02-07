@@ -4,6 +4,9 @@ Chris Morrison
 ## Description
 Various Scripts to simplify the deplyoment and management of an OpenProject 7 Container Instance.
 
+# Utility Scripts
+make-certs.sh will poop out ssl stuff for nginx to use
+
 # Images and Scripts
 ## Working Setup Scripts
 - nginx-proxy & nginx-ssl (sets up domain routing)
