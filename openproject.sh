@@ -7,4 +7,4 @@ docker run -d  \
 	-v $(pwd)/OpenProject/pgdata:/var/lib/postgresql/9.4/main \
 	-v $(pwd)/OpenProject/logs:/var/logs/supervisor \
 	-v $(pwd)/OpenProject/static:/var/db/openproject \
-	openproject/community:7
+	openproject/community:latest

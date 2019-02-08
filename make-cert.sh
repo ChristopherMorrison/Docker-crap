@@ -4,6 +4,6 @@ mkdir certs
 
 #openssl req -out CSR.csr -new -newkey rsa:2048 -nodes -keyout privateKey.key
 
-openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout \*.key -out \*.crt
+openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout certs/mykey.key -out certs/mycert.crt
 
 
