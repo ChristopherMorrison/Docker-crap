@@ -1,12 +1,12 @@
 version: "3"
-servics:
+services:
   OpenProject:
-	  image: openproject/community
+    image: openproject/community
     environment:
       # TODO: split out secret key here, not like it's actually in use though
-	    SECRET_KEY_BASE: 8DE0CF09E13C573B40933D1F3635A13D953EE7734077C75F888064085A75795EEB387D0A3C03616A80528BFE6754D6C
-	    VIRTUAL_HOST: openproject.morrison.com
+      SECRET_KEY_BASE: 8DE0CF09E13C573B40933D1F3635A13D953EE7734077C75F888064085A75795EEB387D0A3C03616A80528BFE6754D6C
+      VIRTUAL_HOST: openproject.morrison.com
     volumes:
-	    - ./OpenProject/pgdata:/var/lib/postgresql/9.4/main
-	    - ./OpenProject/static:/var/db/openproject
-	    - ./OpenProject/logs:/var/logs/supervisor
+      - ./OpenProject/pgdata:/var/lib/postgresql/9.4/main
+      - ./OpenProject/static:/var/db/openproject
+      - ./OpenProject/logs:/var/logs/supervisor
