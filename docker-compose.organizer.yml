@@ -1,0 +1,14 @@
+version: "3"
+services:
+  organizr:
+    image: organizrtools/organizr-v2
+    environment:
+      # TODO: move these to the config file?
+      PUID: 1000
+      PGUID: 1000
+      VIRTUAL_HOST: dashboard.cyberatuc.org
+    volumes:
+      - ./organizr/config:/config
+    restart: always
+    ports:
+      - 80:80

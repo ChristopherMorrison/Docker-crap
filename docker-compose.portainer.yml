@@ -1,0 +1,9 @@
+version: "3"
+services:
+  portainer:
+    image: portainer/portainer
+    environment:
+      VIRTUAL_HOST: portainer.morrison.com
+    volumes:
+      - ./portainer_data:/data
+      - "/var/run/docker.sock:/var/run/docker.sock"

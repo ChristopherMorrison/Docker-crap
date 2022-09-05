@@ -1,0 +1,7 @@
+version: "3"
+services:
+	schemaverse:
+	  image: frozenfoxx/schemaverse
+
+	schemaverse-view:
+	  image: frozenfoxx/docker-schemaverse-visualizer
